@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Addition Example</title>
+    <script>
+        function addnumbers() {
+           var num1= parseInt(document.getElementById('number1').value);
+           
+           
+           var num2= parseInt(document.getElementById('number2').value);
+           
+           
+           var num3= parseInt(document.getElementById('number3').value);
+        
+           
+           var num4= parseInt(document.getElementById('number4').value);
+           
+           
+           var num5= parseInt(document.getElementById('number5').value);
+           
+           
+           var result= num1 + num2 + num3 + num4 + num5;
+        
+           
+           var average= result/5;
+
+            if(result>90){
+               window.alert("Grade O");
+            }
+            
+            if(90<result>80){
+               window.alert("Grade A");     
+            }
+            if(80<result>90){
+                window.alert("Grade B");
+            }
+            if(70<result>90){
+               window.alert("Grade C");
+            }
+            if(60<result>90){
+               window.alert("Grade D");
+            }
+            document.getElementById('result').innerHTML = ' Result:' +result;
+
+        }  
+    </script>
+    
+    
+</head>
+<body>
+    <h2>Average</h2>
+    
+    <input type="number" id="number1" placeholder="Enter number 1"> <br><br><br><br><br> 
+    
+    <input type="number" id="number2" placeholder="Enter number 2"> <br><br><br><br><br>
+    
+    <input type="number" id="number3" placeholder="Enter number 3"> <br><br><br><br><br>
+    
+    <input type="number" id="number4" placeholder="Enter number 4"> <br><br><br><br><br>
+    
+    <input type="number" id="number5" placeholder="Enter number 5"> <br><br><br><br><br>
+
+    
+    <button onclick="addNumbers()">Add</button><br><br><br><br><br>
+    
+    <div id="result"></div>
+</body>
+</html>
